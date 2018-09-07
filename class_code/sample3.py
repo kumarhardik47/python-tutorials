@@ -30,5 +30,5 @@ class C(A, B,object):
         return self.name  
   
 C1 = C()
-print help(C1)
+#print help(C1)
 print(C1.getName())  

@@ -9,14 +9,16 @@ class Fib:
 		return self
 
 	def next(self):
-		retval = self.a
+		retval = self.a +self.b
 		self.a = self.b
-		self.b = self.a + self.b
+		self.b = retval
 	
 		return retval
 
 fib = iter(Fib())
-for i in range(3):
+print 0
+print 1
+for i in range(10):
 	print next(fib)
 
 		

@@ -2,7 +2,7 @@ import os
 
 class A:
 	a = 1
-	_a = 1
+	_a = 29
 	__a = 1
 
 	def __init__(self,a):
@@ -28,7 +28,7 @@ class B(A,object):
 		#print self.__a
 
 	def _print_a(self):
-		return self.a,self._a,self.b
+		return self.a,self._a,self.b 
 	
 	def __print_a(self):
 		print self.a

@@ -1,7 +1,3 @@
-
-
-
-
 class A(object):
     def go(self):
 	print 'A' * 80

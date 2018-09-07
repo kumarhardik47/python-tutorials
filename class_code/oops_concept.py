@@ -29,20 +29,25 @@ class Employee:
 	@salary.setter
 	def salary(self,hike):
 		#print "salary:", self.salary
+		print "@" * 80
 		self.raise_amt = hike
 
 	@salary.deleter
 	def salary(self):
+		print "@!" * 80
 		del self.base
 
 
 e = Employee("hardik","mahto",75000)
 #print e.get_email()
 Employee.change_raise(5)
-print e.base
+print e.salary
+#print e.raise_amt
 print "raise:" , e.raise_amt
 e.raise_amt = 10
-print e.salary
+print e.salary, "raise:", e.raise_amt
+print "Employee.raise_amt:", Employee.raise_amt
 del e.base
 del e.fname
+
 #print e.fname

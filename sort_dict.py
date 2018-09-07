@@ -7,10 +7,10 @@ mydict = {'carl':40,
 
 a = {}
 for key in sorted(mydict.iterkeys()):
-    b = {key:mydict[key]}
-    print b
+    #b = {key:mydict[key]}
+    print key
     #a.update("%s:%s" % (key, mydict[key]))
-    a.update(b)
-print a
+    #a.update(b)
+#print a
 #d = json.loads(a)
 #print d

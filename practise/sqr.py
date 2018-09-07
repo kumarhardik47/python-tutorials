@@ -3,7 +3,8 @@ import os
 def sqr(num):
 	d = {}
 	for i in range(1,num+1):
-		d[i] = i*i;
+		d[i] = i*i
+		print type(d)
 
 	return d
 if __name__ == "__main__":

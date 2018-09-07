@@ -4,7 +4,7 @@ import optparse
 #nothing should be in between args and kwargs
 def pars(e,f,*args,**kwargs):
 	print e,f
-	print(args)
+	print type(args), type(kwargs)
 	print '*' * 80
 	for k in kwargs:
 		print kwargs[k]

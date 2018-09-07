@@ -156,7 +156,7 @@ if out:
 
 #match if two words from a list of words starting with letter 'P'
 string18="Hello My name is Prem Patani"
-out = re.findall(r'P[a-zA-z]*',string18)
+out = re.findall(r'P[a-zA-Z]*',string18)
 if out:
 	print out
 else:
@@ -166,7 +166,7 @@ else:
 #match if two words from a list of words starting with letter 'P'
 words = ["Python PHP", "Java JavaScript", "c c++"]
 #print words, str(words)
-out = re.findall(r'P[a-zA-z]*',str(words))
+out = re.findall(r'P[a-zA-Z]*',str(words))
 if out:
 	print out
 else:
